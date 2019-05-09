@@ -236,8 +236,8 @@ figure {
   margin-left: 20px;
 }
 .event {
-  margin: 10px;
-  width: 480px;
+  margin: 1%;
+  width: 48%;
   flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden;
@@ -275,7 +275,7 @@ figure {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap:
+  flex-wrap: wrap;
 
 }
 
@@ -345,7 +345,9 @@ figure {
 /* --------------media querie firts desktop----------  */
 
 @media screen and (max-width:1024px) {
-
+ .container{
+   padding: 0 1em;
+ }
 }
 
 @media screen and (max-width: 767px) {
@@ -398,14 +400,48 @@ figure {
   .project-description{
     font-size: 1em;
   }
+  .event{
+    width: auto;
+    flex-shrink: initial;
+  }
+
+  .event img{
+    width: 100%;
+
+  }
+
+
 }
 
 @media screen and (max-width:480px) {
   .project-details{
     font-size:12px;
   }
+  .event-detail{
+    margin: -2em .5em .5em ;
+    padding: : 1em;
+  }
+  .contact{
+    height: auto;
+    padding: 1em 0;
+    text-align: center;
+    display: block;
+  }
+  .form-email button{
+    margin: 1em auto;
+  }
+  .form-email h3{
+    margin-top: 0;
+  }
+  .footer{
+    display: block;
+    text-align: center;
+    border: 1px solid transparent;
+  }
 }
 
 @media screen and (max-width:320px) {
-
+  .container{
+    padding: 0;
+  }
 }
